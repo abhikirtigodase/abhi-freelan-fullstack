@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Abhishek Godase – Freelance Java &amp; React Developer</title>
+<meta name="description" content="Freelance full-stack developer building web apps and desktop software with Java, React, PostgreSQL, MySQL, Oracle, AWS and GCP.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#080C18;--bg2:#0D1324;--surface:#121A30;--ink:#F1F4FF;--muted:#A0ABCB;--line:#243052;--accent:#5B8CFF;--accent2:#2EE6B6;--on:#071022;--glow:rgba(91,140,255,.28);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#F5F7FD;--bg2:#EAEFFB;--surface:#FFFFFF;--ink:#0C1330;--muted:#4A5578;--line:#D3DBF0;--accent:#2F5BEA;--accent2:#0B9E7A;--on:#FFFFFF;--glow:rgba(47,91,234,.16)}}
+:root[data-theme="light"]{--bg:#F5F7FD;--bg2:#EAEFFB;--surface:#FFFFFF;--ink:#0C1330;--muted:#4A5578;--line:#D3DBF0;--accent:#2F5BEA;--accent2:#0B9E7A;--on:#FFFFFF;--glow:rgba(47,91,234,.16)}
+html{scroll-padding-top:90px;scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "DM Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:Sora,system-ui,sans-serif;line-height:1.12;margin:0;letter-spacing:-.025em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent2);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;justify-content:space-between;align-items:center;height:68px}
+.logo{font:800 19px Sora,sans-serif;text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo b{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:var(--on);font-size:15px}
+nav{display:flex;align-items:center;gap:26px;font-size:15px}
+nav a{text-decoration:none;color:var(--muted)}nav a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:var(--on);font:700 16px "DM Sans",sans-serif;text-decoration:none;border:0;cursor:pointer;box-shadow:0 10px 30px var(--glow)}
+nav .btn{padding:10px 18px;color:var(--on);font-size:14px}
+.btn.alt{background:transparent;color:var(--ink);border:1.5px solid var(--line);box-shadow:none}
+.btn.wa{background:#25D366;color:#06210F;box-shadow:0 10px 30px rgba(37,211,102,.25)}
+#theme{background:none;border:1px solid var(--line);color:var(--muted);border-radius:10px;width:38px;height:38px;cursor:pointer;font-size:16px}
+.hero{padding:84px 0 70px;background:radial-gradient(900px 420px at 80% -10%,var(--glow),transparent 70%)}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.pill{display:inline-flex;gap:9px;align-items:center;padding:7px 16px;border:1px solid var(--line);border-radius:999px;background:var(--surface);font-size:14px;color:var(--muted);margin-bottom:24px}
+.pill i{width:9px;height:9px;border-radius:50%;background:var(--accent2);box-shadow:0 0 0 4px var(--glow)}
+.hero h1{font-size:clamp(38px,5.6vw,68px);font-weight:800}
+.grad{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{font-size:19px;color:var(--muted);max-width:52ch;margin:22px 0 30px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.trust{display:flex;flex-wrap:wrap;gap:8px 24px;margin:28px 0 0;padding:0;list-style:none;color:var(--muted);font-size:15px}
+.trust li::before{content:"✓ ";color:var(--accent2);font-weight:700}
+.term{background:var(--surface);border:1px solid var(--line);border-radius:18px;box-shadow:0 30px 80px var(--glow);overflow:hidden}
+.term .top{display:flex;gap:7px;padding:14px 16px;border-bottom:1px solid var(--line);background:var(--bg2)}
+.term .top i{width:11px;height:11px;border-radius:50%;background:var(--line)}
+.term pre{margin:0;padding:22px;font:500 14.5px/1.8 ui-monospace,Menlo,Consolas,monospace;color:var(--muted);overflow-x:auto}
+.term .k{color:var(--accent)}.term .g{color:var(--accent2)}.term .w{color:var(--ink)}
+section{padding:84px 0}
+.alt-bg{background:var(--bg2)}
+.head{max-width:640px;margin-bottom:44px}
+.head h2{font-size:clamp(30px,4vw,44px);font-weight:800}
+.head p{color:var(--muted);margin:14px 0 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:28px}
+.card h3{font-size:21px;margin:14px 0 8px}
+.card p{margin:0;color:var(--muted);font-size:16px}
+.ic{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;background:var(--glow);color:var(--accent);font:800 19px Sora,sans-serif}
+.proj{display:grid;gap:26px}
+.case{display:grid;grid-template-columns:1fr 1.15fr;background:var(--surface);border:1px solid var(--line);border-radius:22px;overflow:hidden}
+.case:nth-child(even){grid-template-columns:1.15fr 1fr}.case:nth-child(even) .shot{order:2}
+.shot{background:linear-gradient(135deg,var(--glow),transparent),var(--bg2);padding:34px;display:grid;place-items:center}
+.win{width:100%;max-width:380px;background:var(--bg);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.win .top{display:flex;gap:6px;padding:10px 12px;border-bottom:1px solid var(--line)}.win .top i{width:9px;height:9px;border-radius:50%;background:var(--line)}
+.win .body{padding:16px;display:grid;gap:9px}
+.win .body b{font:700 15px Sora,sans-serif}
+.win .body i{display:block;height:10px;border-radius:5px;background:var(--line)}
+.win .body i.a{background:linear-gradient(90deg,var(--accent),var(--accent2));width:60%}
+.win .body i.s{width:78%}.win .body i.t{width:45%}
+.cbody{padding:34px}
+.cbody h3{font-size:25px;margin-bottom:14px}
+.cbody dl{margin:0 0 18px;display:grid;gap:10px}
+.cbody dt{font-weight:700;color:var(--accent2);font-size:14px}
+.cbody dd{margin:0;color:var(--muted);font-size:16px}
+.mini{display:flex;flex-wrap:wrap;gap:8px}
+.mini span,.tags span{font-size:14px;padding:6px 14px;border-radius:999px;border:1px solid var(--line);background:var(--bg2)}
+.tags{display:flex;flex-wrap:wrap;gap:12px}.tags span{font-size:16px;padding:10px 20px;background:var(--surface)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;list-style:none;padding:0;margin:0;counter-reset:s}
+.steps li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:26px}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent2));color:var(--on);font:800 16px Sora,sans-serif;margin-bottom:16px}
+.steps b{font:700 19px Sora,sans-serif;display:block;margin-bottom:6px}.steps span{color:var(--muted);font-size:16px}
+.faq details{border-bottom:1px solid var(--line);padding:20px 0;max-width:760px}
+.faq summary{cursor:pointer;font:700 19px Sora,sans-serif}
+.faq p{color:var(--muted);margin:12px 0 0}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:44px;background:var(--surface);border:1px solid var(--line);border-radius:26px;padding:48px;box-shadow:0 30px 80px var(--glow)}
+.contact h2{font-size:clamp(28px,3.6vw,40px);font-weight:800}
+.contact p{color:var(--muted)}
+.ways{display:grid;gap:12px;margin-top:26px}
+form{display:grid;gap:14px}
+label{font-size:14px;color:var(--muted);display:block;margin-bottom:5px}
+input,select,textarea{width:100%;padding:13px 14px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:400 16px "DM Sans",sans-serif}
+textarea{min-height:110px;resize:vertical}
+.row{display:flex;gap:10px;flex-wrap:wrap}
+footer{padding:36px 0 56px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+.fab{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:30;width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,0,0,.35);text-decoration:none}
+.fab svg{width:30px;height:30px;fill:#fff}
+@media (max-width:900px){.hero .wrap,.case,.case:nth-child(even),.contact{grid-template-columns:1fr}.case:nth-child(even) .shot{order:0}.contact{padding:28px}}
+@media (max-width:720px){nav a:not(.btn){display:none}.hero{padding:56px 0 48px}section{padding:60px 0}.cbody{padding:24px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="bar"><div class="wrap">
+  <a class="logo" href="#top"><b>AG</b>Abhishek Godase</a>
+  <nav><a href="#services">Services</a><a href="#projects">Projects</a><a href="#process">Process</a><a href="#faq">FAQ</a><button id="theme" type="button" aria-label="Switch light or dark theme">◐</button><a class="btn" href="#contact">Hire me</a></nav>
+</div></div>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+  <div>
+    <span class="pill"><i></i>Taking new projects now</span>
+    <h1>Websites and software that <span class="grad">grow your business.</span></h1>
+    <p class="lead">I’m Abhishek, a freelance Java and React developer. I design, build and launch web apps and desktop software, with the database and cloud hosting handled for you.</p>
+    <div class="cta"><a class="btn wa" href="https://wa.me/918669090349?text=Hi%20Abhishek%2C%20I%20want%20to%20discuss%20a%20project." target="_blank" rel="noopener">Chat on WhatsApp</a><a class="btn alt" href="mailto:techieabhhi@gmail.com">Email me</a></div>
+    <ul class="trust"><li>Fixed price, written scope</li><li>Weekly working demos</li><li>You own all the code</li><li>Reply within 24 hours</li></ul>
+  </div>
+  <div class="term" aria-hidden="true"><div class="top"><i></i><i></i><i></i></div>
+<pre><span class="k">const</span> <span class="w">project</span> = {
+  frontend: <span class="g">"React"</span>,
+  backend:  <span class="g">"Java · Spring Boot"</span>,
+  database: <span class="g">"PostgreSQL | MySQL | Oracle"</span>,
+  cloud:    <span class="g">"AWS | Google Cloud"</span>,
+  status:   <span class="g">"live in weeks"</span>
+};</pre></div>
+</div></div>
+
+<section id="services"><div class="wrap">
+  <div class="head"><h2>What I can build for you</h2><p>One developer for the whole job, from the first screen to the live server.</p></div>
+  <div class="grid">
+    <div class="card"><div class="ic">W</div><h3>Websites and web apps</h3><p>Business sites, customer portals, dashboards and admin panels that load fast and work on every phone.</p></div>
+    <div class="card"><div class="ic">D</div><h3>Desktop applications</h3><p>Billing, inventory and internal tools for Windows, Mac and Linux, built in Java.</p></div>
+    <div class="card"><div class="ic">DB</div><h3>APIs and databases</h3><p>Design, tuning and migration for PostgreSQL, MySQL and Oracle, including moving old data to a new system.</p></div>
+    <div class="card"><div class="ic">C</div><h3>Cloud launch and care</h3><p>Hosting, domain, HTTPS, backups and monthly maintenance on AWS or Google Cloud.</p></div>
+  </div>
+</div></section>
+
+<section id="projects" class="alt-bg"><div class="wrap">
+  <div class="head"><h2>Projects I’ve delivered</h2><p>A few examples of the problems I solve.</p></div>
+  <!-- EDIT: replace these four with your own real projects: name, problem, what you built, result, tech. -->
+  <div class="proj">
+    <article class="case"><div class="shot"><div class="win"><div class="top"><i></i><i></i><i></i></div><div class="body"><b>Billing &amp; Inventory</b><i class="a"></i><i class="s"></i><i class="t"></i><i class="s"></i></div></div></div>
+    <div class="cbody"><h3>Desktop billing and inventory system</h3><dl><dt>The problem</dt><dd>A retail shop tracked stock and invoices on paper and spreadsheets, and made frequent errors.</dd><dt>What I built</dt><dd>A Java desktop app with GST invoices, stock alerts, daily sales reports and automatic database backup.</dd><dt>The result</dt><dd>Invoices take seconds, and the owner sees stock and sales at any time.</dd></dl><div class="mini"><span>Java</span><span>MySQL</span><span>Desktop</span></div></div></article>
+    <article class="case"><div class="shot"><div class="win"><div class="top"><i></i><i></i><i></i></div><div class="body"><b>Customer Portal</b><i class="a"></i><i class="s"></i><i class="t"></i><i class="s"></i></div></div></div>
+    <div class="cbody"><h3>Customer portal on the cloud</h3><dl><dt>The problem</dt><dd>A service company handled orders and support requests by phone and WhatsApp, so requests got lost.</dd><dt>What I built</dt><dd>A React and Spring Boot portal with login, order tracking, an admin dashboard and email notifications, hosted on AWS.</dd><dt>The result</dt><dd>Customers track their own orders, and the team spends less time answering status calls.</dd></dl><div class="mini"><span>React</span><span>Java</span><span>PostgreSQL</span><span>AWS</span></div></div></article>
+    <article class="case"><div class="shot"><div class="win"><div class="top"><i></i><i></i><i></i></div><div class="body"><b>Data Migration</b><i class="a"></i><i class="s"></i><i class="t"></i><i class="s"></i></div></div></div>
+    <div class="cbody"><h3>Oracle to PostgreSQL migration</h3><dl><dt>The problem</dt><dd>High Oracle licence costs and a slow, hard-to-change reporting database.</dd><dt>What I built</dt><dd>A tested migration of schema, data and queries, with checks that every record matched.</dd><dt>The result</dt><dd>Lower running cost, faster reports and no data lost.</dd></dl><div class="mini"><span>Oracle</span><span>PostgreSQL</span><span>Java</span></div></div></article>
+    <article class="case"><div class="shot"><div class="win"><div class="top"><i></i><i></i><i></i></div><div class="body"><b>Booking System</b><i class="a"></i><i class="s"></i><i class="t"></i><i class="s"></i></div></div></div>
+    <div class="cbody"><h3>Online booking website</h3><dl><dt>The problem</dt><dd>A clinic took appointments by phone and missed bookings after hours.</dd><dt>What I built</dt><dd>A mobile-friendly booking site with time slots, SMS and email reminders and a staff calendar, on Google Cloud.</dd><dt>The result</dt><dd>Patients book any time of day, and no-shows drop with reminders.</dd></dl><div class="mini"><span>React</span><span>Spring Boot</span><span>MySQL</span><span>GCP</span></div></div></article>
+  </div>
+</div></section>
+
+<section id="process"><div class="wrap">
+  <div class="head"><h2>How a project runs</h2><p>A clear path from your idea to a live product.</p></div>
+  <ol class="steps">
+    <li><b>Talk</b><span>You explain the problem. I reply within one working day with questions and a rough estimate.</span></li>
+    <li><b>Fixed scope and price</b><span>You get a written plan, a delivery date and a price before any work begins.</span></li>
+    <li><b>Build in small steps</b><span>You see a working version every week and can change direction early.</span></li>
+    <li><b>Go live and support</b><span>I deploy it, show you how to use it, and stay available for fixes and updates.</span></li>
+  </ol>
+</div></section>
+
+<section id="stack" class="alt-bg"><div class="wrap">
+  <div class="head"><h2>Tools I work with</h2></div>
+  <div class="tags"><span>Java</span><span>Spring Boot</span><span>React</span><span>JavaScript</span><span>PostgreSQL</span><span>MySQL</span><span>Oracle</span><span>AWS</span><span>Google Cloud</span><span>REST APIs</span></div>
+</div></section>
+
+<section id="faq" class="faq"><div class="wrap">
+  <div class="head"><h2>Common questions</h2></div>
+  <details><summary>How much does a project cost?</summary><p>It depends on size. I send a fixed quote after a short call, so you know the full price before we start.</p></details>
+  <details><summary>How long does it take?</summary><p>A business website usually takes 1–3 weeks. Web or desktop applications take 4–12 weeks, depending on features.</p></details>
+  <details><summary>Who owns the code?</summary><p>You do. When the project is paid for, I hand over all source code and access to your hosting.</p></details>
+  <details><summary>Do you offer support after launch?</summary><p>Yes. I fix bugs for 30 days at no extra cost, and offer monthly maintenance plans after that.</p></details>
+  <details><summary>Can you work with my existing system?</summary><p>Yes. I can add features to existing Java, React or database projects, and connect them with new ones.</p></details>
+</div></section>
+
+<section id="contact"><div class="wrap"><div class="contact">
+  <div>
+    <h2>Tell me about your project</h2>
+    <p>Share a few lines about what you need. I’ll reply with questions and a free quote within 24 hours.</p>
+    <div class="ways"><a class="btn wa" href="https://wa.me/918669090349?text=Hi%20Abhishek%2C%20I%20want%20to%20discuss%20a%20project." target="_blank" rel="noopener">WhatsApp: +91 86690 90349</a><a class="btn alt" href="mailto:techieabhhi@gmail.com">techieabhhi@gmail.com</a></div>
+  </div>
+  <form id="f">
+    <div><label for="n">Your name</label><input id="n" required></div>
+    <div><label for="t">What do you need?</label><select id="t"><option>Website</option><option>Web application</option><option>Desktop application</option><option>Database or cloud work</option></select></div>
+    <div><label for="m">Project details</label><textarea id="m" required></textarea></div>
+    <div class="row"><button class="btn" type="submit">Send by email</button><button class="btn wa" type="button" id="wa">Send on WhatsApp</button></div>
+  </form>
+</div></div></section>
+</main>
+
+<footer><div class="wrap">© <span id="y"></span> Abhishek Godase · Freelance full-stack developer · India</div></footer>
+<a class="fab" href="https://wa.me/918669090349?text=Hi%20Abhishek%2C%20I%20want%20to%20discuss%20a%20project." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 32 32"><path d="M16 3C9 3 3.4 8.6 3.4 15.5c0 2.3.6 4.4 1.7 6.3L3 29l7.4-2c1.8 1 3.8 1.5 5.6 1.5 7 0 12.6-5.6 12.6-12.5S23 3 16 3zm0 22.800c-1.800 0-3.500-.5-5-1.400l-.4-.2-4.400 1.200 1.200-4.300-.3-.4a10.200 10.200 0 0 1-1.600-5.500C5.500 9.800 10.200 5.200 16 5.200s10.500 4.600 10.500 10.300S21.800 25.800 16 25.800zm5.700-7.600c-.3-.2-1.900-.9-2.200-1-.3-.1-.5-.2-.7.200s-.8 1-1 1.200c-.2.200-.4.200-.7.100-1.900-.9-3.100-1.700-4.300-3.800-.3-.6.300-.5.900-1.700.1-.2 0-.4 0-.5l-1-2.300c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.100-.8.400-.3.300-1.100 1.100-1.100 2.600s1.100 3 1.300 3.200c.2.200 2.200 3.400 5.400 4.700 2 .8 2.800.9 3.800.7.600-.1 1.900-.8 2.200-1.500.3-.7.300-1.400.2-1.500-.1-.2-.3-.2-.6-.4z"/></svg></a>
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+function msg(){return 'Name: '+document.getElementById('n').value+'\nNeed: '+document.getElementById('t').value+'\n\n'+document.getElementById('m').value}
+document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();
+ location.href='mailto:techieabhhi@gmail.com?subject='+encodeURIComponent('Project enquiry: '+document.getElementById('t').value)+'&body='+encodeURIComponent(msg())});
+document.getElementById('wa').addEventListener('click',function(){
+ if(!document.getElementById('f').reportValidity())return;
+ window.open('https://wa.me/918669090349?text='+encodeURIComponent('Hi Abhishek,\n'+msg()),'_blank','noopener')});
+document.getElementById('theme').addEventListener('click',function(){
+ var r=document.documentElement,l=matchMedia('(prefers-color-scheme: light)').matches;
+ var c=r.getAttribute('data-theme')||(l?'light':'dark');r.setAttribute('data-theme',c==='dark'?'light':'dark')});
+</script>
+</body>
+</html>
